@@ -1,0 +1,15 @@
+name = "website"
+main = "src/index.js"
+compatibility_date = "2024-09-14"
+
+[env.production]
+routes = [
+  {
+    pattern = "dohainfotech.com/*",
+    zone_name = "dohainfotech.com"
+  },
+  {
+    pattern = "*.dohainfotech.com/*",
+    zone_name = "dohainfotech.com"
+  }
+]
